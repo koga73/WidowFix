@@ -1,20 +1,20 @@
 ##WidowFix##
 *By: AJ Savino*
 
-JS Library to fix widows in copy (a single word that hangs on a new line). Works on HTML elements and Strings. No dependencies required. Works by inserting non-breaking spaces at the end of the copy.
+JS library to fix widows in copy (a single word that hangs on a new line). Works on HTML elements and Strings. No dependencies required. Works by inserting non-breaking spaces at the end of the copy.
 
 ###Implementation###
 Include JS file on your page
 
-HTML
-```html
+JavaScirpt
+```javascript
 //Run on body. "lorem ipsum" is a non-breaking phrase
 WidowFix.runElements([document.body], ["lorem ipsum"]);
 
 //Run on string
-var test = "Lorem ipsum dolor sit amet";
-test = WidowFix.runString(test);
-console.log(test);
+var copy = "Lorem ipsum dolor sit amet";
+copy = WidowFix.runString(copy);
+console.log(copy);
 ```
 
 ----------
