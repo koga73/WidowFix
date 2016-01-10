@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WidowFix Example</title>
+	</head>
+	<body>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus varius euismod. Pellentesque placerat elit velit, non ornare nisl semper at. Mauris scelerisque rutrum nunc, sit amet gravida quam dapibus sit amet. Nullam dui felis, efficitur et bibendum eu, pretium id erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc aliquet nulla non sodales laoreet. Fusce eleifend nunc ex, elementum elementum ligula euismod vitae.
+
+			Mauris dignissim ipsum sit amet ligula bibendum commodo. Nulla facilisi. Nullam at faucibus metus. Suspendisse porttitor eros turpis, sed imperdiet ipsum blandit ut. Integer pellentesque, magna quis venenatis porttitor, nulla sapien faucibus velit, vel vulputate felis arcu sed arcu. Vestibulum non ornare lorem. Phasellus suscipit erat tempus arcu sodales ultricies. Sed ultrices mollis nibh, eget accumsan ex interdum vitae. Vivamus lorem justo, consectetur vel malesuada blandit, iaculis ac lacus. Maecenas fringilla, augue a varius volutpat, lacus eros vehicula elit, at blandit velit turpis eget ligula. Nam blandit mi vulputate, accumsan mauris nec, feugiat odio.
+
+			Nulla non dui at mauris lacinia lobortis non a nulla. Maecenas turpis sem, egestas at purus in, viverra malesuada purus. Duis nec auctor nulla, nec iaculis felis. Nam varius posuere aliquam. Nullam dapibus felis eu justo rhoncus egestas. Etiam rhoncus porta sapien, bibendum molestie nisl condimentum eu. Morbi convallis feugiat risus vel ullamcorper. Etiam accumsan ipsum vitae sapien lobortis, quis viverra lorem maximus. Maecenas efficitur purus ac vulputate ultricies. Vivamus blandit tempor arcu. Nullam consectetur vehicula hendrerit. Phasellus ultrices magna eget elit iaculis luctus.
+
+			Sed bibendum arcu pharetra dui euismod congue. Nunc volutpat tellus a est tempor, a tempus massa elementum. Quisque elementum pellentesque nisi, lobortis dapibus eros convallis eget. Ut ac quam tincidunt metus scelerisque pharetra sit amet vitae elit. Integer a erat nisi. Suspendisse sed tempus ante, id fringilla justo. Nullam pharetra in urna lobortis commodo. Phasellus commodo convallis magna sit amet rutrum. Donec massa augue, placerat sit amet nunc quis, lacinia ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut tempus ante vulputate velit aliquet sodales. Maecenas convallis nec ex nec feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+			Pellentesque ullamcorper ante in condimentum iaculis. Nulla varius, ligula sodales convallis iaculis, massa ante hendrerit massa, pellentesque ultrices dolor lectus et ex. Sed rhoncus sit amet massa eu pharetra. Proin bibendum, elit et tincidunt mollis, libero dolor dapibus purus, quis mollis odio tellus ut libero. Sed euismod, quam sed mattis accumsan, urna dui auctor mauris, at efficitur quam erat at elit. Sed ut arcu sit amet felis dictum dignissim sit amet ut massa. Praesent id dignissim massa. Sed quis molestie neque. Donec quis viverra sapien. Quisque non leo quis mi varius ultrices nec nec est. Nam et ligula ante. Fusce nunc elit, consectetur at semper id, gravida quis eros.
+		</p>
+		<script src="WidowFix.js"></script>
+		<script type="text/javascript">
+			//Run on 'p' tags. "lorem ipsum" is a non-breaking phrase
+			WidowFix.runElements(document.getElementsByTagName("p"), ["lorem ipsum"]);
+			
+			//Run on string
+			var copy = "Lorem ipsum dolor sit amet";
+			copy = WidowFix.runString(copy);
+			console.log(copy);
+		</script>
+	</body>
+</html>
